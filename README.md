@@ -26,7 +26,7 @@ navigation as the screen size changes.
 
 ## Getting started
 
-To use this plugin, add `auto_scaffold` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/platform-integration/platform-channels).
+To use this plugin, add `auto_scaffold_easy` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/platform-integration/platform-channels).
 
 ## Usage
 
@@ -34,21 +34,22 @@ Use AutoScaffold just like Scaffold.
 
 ```dart
 AutoScaffold(
-    saveState: true,
-    tabPages: [
-        TabPage(
-            label: "Home",
-            icon: Icon(Icons.home),
-            selectedIcon: Icon(Icons.home_outlined),
-            widget: Home(key: ValueKey("Home")),
-        ),
-        TabPage(
-            label: "Star",
-            icon: Icon(Icons.star),
-            selectedIcon: Icon(Icons.star_border),
-            widget: Home(key: ValueKey("Star")),
-        ),
-    ],
+  saveState: true,
+  theme: TabTheme(labelType: LabelType.show),
+  body: [
+    TabItem(
+      label: "Home",
+      icon: Icon(Icons.home),
+      selectedIcon: Icon(Icons.home_outlined),
+      widget: Home(key: ValueKey("Home")),
+    ),
+    TabItem(
+      label: "Star",
+      icon: Icon(Icons.star),
+      selectedIcon: Icon(Icons.star_border),
+      widget: Home(key: ValueKey("Star")),
+    ),
+  ],
 );
 ```
 
