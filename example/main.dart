@@ -33,7 +33,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return const AutoScaffold(
       saveState: true,
-      tabPages: [
+      theme: TabTheme(labelType: LabelType.show),
+      body: [
         TabItem(
           label: "Home",
           icon: Icon(Icons.home),

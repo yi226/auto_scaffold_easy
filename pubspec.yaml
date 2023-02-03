@@ -1,7 +1,7 @@
 name: auto_scaffold_easy
 description: A Scaffold which is ability to automatically select between [NavigationDestination] and [NavigationRailDestination] as the screen size changes
-version: 1.0.0
-homepage: https://github.com/yi226/auto_scaffold
+version: 1.0.1
+homepage: https://github.com/yi226/auto_scaffold_easy
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
